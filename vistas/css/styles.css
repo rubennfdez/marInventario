@@ -1,0 +1,230 @@
+
+#contenido {
+    width: 2500px; /* Establece el ancho del contenedor a 300 píxeles */
+    height: 1000px; /* Establece la altura del contenedor a 200 píxeles */
+    padding-left: 5%;
+    background-color: rgb(247, 247, 247); 
+    margin-left: 7%;
+    margin-top: -3%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+   font-family: 'Poppins';
+   margin:0; padding:0;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 110%;
+   overflow-x: hidden;
+}
+
+
+main{
+   left: 0px;
+   padding: 50px;
+   transition: margin-left 0.5s ease;
+}
+main.min-main{
+   margin-left: 10px;
+}
+footer {
+   background-color: rgb(58, 59, 62);
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 20px;
+   color: white;
+   padding-left: 7%;
+   font-size: 5px;
+   left: 0%;
+}
+.container{
+   max-width: 3000px;
+   max-height: 3000px;
+ 
+}
+
+.container .title{
+   font-size: 3.9rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .categoria-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
+   gap:1rem;
+}
+
+.container .categoria-container .categoria{
+   text-align: center;
+   padding:2rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(39, 63, 131, 0.1);
+   outline: .2rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .categoria-container .categoria:hover{
+   outline: .2rem solid #383737;
+   outline-offset: 0;
+}
+
+.container .categoria-container .categoria img{
+   height: 12rem;
+}
+
+.container .categoria-container .categoria:hover img{
+   transform: scale(.9);
+}
+
+.container .categoria-container .categoria h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444444;
+}
+
+.container .categoria-container .categoria:hover h3{
+   color:#a53907;
+}
+
+.container .categoria-container .categoria .price{
+   font-size: 2rem;
+   color:#444;
+}
+
+.categoria-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.categoria-preview .preview{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   width: 50rem;
+}
+
+.categoria-preview .preview.active{
+   display: inline-block;
+}
+
+.categoria-preview .preview img{
+   height: 15rem;
+}
+
+.categoria-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+.categoria-preview .preview .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.categoria-preview .preview h3{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 2.5rem;
+}
+
+.categoria-preview .preview .stars{
+   padding:1rem 0;
+   font-size: 1.7rem;
+}
+
+.categoria-preview .preview .stars i{
+   color:#27ae60;
+}
+
+.categoria-preview .preview .stars span{
+   color:#999;
+}
+
+.categoria-preview .preview p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:#777;
+}
+
+.categoria-preview .preview .price{
+   padding:1rem 0;
+   font-size: 2.5rem;
+   color:#27ae60;
+}
+
+.categoria-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.categoria-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
+}
+
+.categoria-preview .preview .buttons a.cart{
+   background: #444;
+   color:#fff;
+}
+
+.categoria-preview .preview .buttons a.cart:hover{
+   background: #111;
+}
+
+.categoria-preview .preview .buttons a.buy:hover{
+   background: #444;
+   color:#fff;
+}
+
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   .categoria-preview .preview img{
+      height: 25rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+}

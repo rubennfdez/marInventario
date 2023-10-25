@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+#contenido {
+    width: 2440px; /* Establece el ancho del contenedor a 300 píxeles */
+    height: 1900px; /* Establece la altura del contenedor a 200 píxeles */
+    padding-left: 0%;
+    background-color: rgb(247, 247, 247); 
+    margin-left: 11%;
+    margin-top: 3%;
+    font-size: 1.4em;
+}
+
+
+*{
+   font-family: 'Poppins';
+   margin:0; padding:0;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html{
+    
+   font-size: 120%;
+   overflow-x: hidden;
+}
+
+
+main{
+   left: 0px;
+   padding: -90px;
+   margin-top: -80px;
+}
+main.min-main{
+   margin-left: 10px;
+}
+
+.container{
+   max-width: 5000px;
+   max-height: 3000px;
+
+ 
+ 
+ 
+}
+
+
+.maquinaescribir {
+    width: 5000px;
+    height: 1000px;
+    margin: auto;
+    display: table;
+   
+
+
+}
+body .maquinaescribir{
+    width: 1800px;
+    height: 1500px;
+ 
+
+}
+
+h5 { 
+    position: relative; 
+    float: left;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+h5 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: #563d7c;
+    border-left: 2px solid black;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 1000% }
+    to { width: 1000px; }
+    
+} 
+table {
+    width: 500px;
+    height: 250px;
+    font-size: 1.1em;
+ 
+  }
+.th{
+    padding: 0px;
+
+}
+.text-center{
+    padding: 10px;
+    font-size: 1.1em;
+}
