@@ -21,7 +21,6 @@
     include_once("header.php");
     include_once("slidebar.php");
     
-    
   ?>
 
     <script type="text/javascript"
