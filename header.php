@@ -29,6 +29,10 @@
                         </ul>
                     </li>
                     </li>
+                    <!--Entradas-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="inventarioentradas.php">ENTRADAS</a>
+                    </li>
                     <!--Productos-->
                     <li class="nav-item">
                         <a class="nav-link" href="productos.php">PRODUCTOS</a>
