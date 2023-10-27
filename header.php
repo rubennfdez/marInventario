@@ -14,21 +14,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <img src="vistas/images/marlogo2.png" alt="Logotipo" width="100" height="50">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <li class="nav-item dropdown">
-                        <!--Inventario-->
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            INVENTARIO GENERAL
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="inventarioentradas.php" data-bs-toggle="modal" data-bs-target="#Entrada">
-                                    ENTRADAS</a></li>
-                            <li><a class="dropdown-item" href="inventariosalidas.php" data-bs-toggle="modal" data-bs-target="#Salida">
-                                    SALIDAS</a></li>
-                        </ul>
-                    </li>
-                    </li>
                     <!--Entradas-->
                     <li class="nav-item">
                         <a class="nav-link" href="inventarioentradas.php">ENTRADAS</a>
