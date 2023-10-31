@@ -14,6 +14,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <img src="vistas/images/marlogo2.png" alt="Logotipo" width="100" height="50">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--INVENTARIO-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexinventario.php">INVENTARIO</a>
+                    </li>
                     <!--Entradas-->
                     <li class="nav-item">
                         <a class="nav-link" href="inventarioentradas.php">ENTRADAS</a>
