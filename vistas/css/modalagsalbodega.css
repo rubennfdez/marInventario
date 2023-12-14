@@ -1,0 +1,175 @@
+.text-center-bold {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo personalizado para el separador */
+hr.my-custom-separator {
+    width: 50%;
+    margin: 1rem auto;
+    border: 2px solid #3498db;
+    border-color: darkcyan;
+}
+
+body .modal-header h1.modal-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para el fondo del encabezado del modal */
+.modal-header {
+    background-color: #166D74;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el fondo del encabezado del modal de EDITAR */
+.modal-header.modal-header-edit {
+    background-color: #166D74;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilo para el icono en el encabezado del modal */
+.modal-header .icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+/* Estilo para el icono en el encabezado del modal del formulario de EDITAR */
+.modal-header .icon-edit {
+    width: 64px;
+    height: 64px;
+    margin-right: 90px;
+    margin-left: 20px;
+}
+
+
+/* Estilo para el texto en el encabezado del modal */
+.modal-header h1.modal-title {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+}
+
+.form-label{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Estilo para la clase form-select */
+.form-select {
+    color: rgb(8, 109, 85);
+    font-size: 20px;
+
+}
+
+/* Cambiar el color del resplandor al enfocar */
+.form-select:focus {
+    border-color: #11959e;
+    box-shadow: 0 0 0 0.20rem #0fc5b6; /* Ajusta el color según tus preferencias */
+}
+
+/* Cambiar el color de fondo de la opción seleccionada */
+.form-select option:checked {
+    background-color: #11bebe; /* Ajusta el color según tus preferencias */
+    color: #000000; /* Ajusta el color del texto según tus preferencias */
+}
+
+/* Cambiar el color del resplandor al enfocar */
+.form-control:focus {
+    border-color: #11959e;
+    box-shadow: 0 0 0 0.20rem #0fc5b6; /* Ajusta el color según tus preferencias */
+}
+
+/* Cambiar el color de fondo de la opción seleccionada */
+.form-control option:checked {
+    background-color: #11bebe; /* Ajusta el color según tus preferencias */
+    color: #000000; /* Ajusta el color del texto según tus preferencias */
+}
+
+.input-group-text {
+    background-color: #166D74; /* Color de fondo del icono de los inputs */
+}
+
+/* Estilo para el ícono en el input-group */
+.input-group-text svg {
+    width: 33px; /* Tamaño del ícono */
+    height: 33px;
+    fill: #FFFFFF; /* Color del ícono */
+}
+
+/* Estilo para el fondo vertical del título en el modal de EDITAR*/
+.modal-body h4.text-center-bold {
+    background: linear-gradient(to right, #166D74, #11bebe); 
+    color: #ffffff; /* Color del texto */
+    padding: 5px; /* Ajusta el espacio interno según tus preferencias */
+    margin: 0; /* Elimina el margen superior e inferior del título */
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 12px;
+}
+
+.text {
+    margin-left: 5px;
+}
+
+/* Estilo para el botón Cerrar */
+.btn-secondary {
+    background-color: #c02307; /* Color fondo */
+    border-color: #ec0808; /* Color del borde */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Estilo para el botón Cerrar cuando el cursor está sobre él */
+.btn-secondary:hover {
+    background-color: #000000; /* Nuevo color de fondo al pasar el cursor */
+    border-color: #ffffff; /* Color del borde verde */
+    color: #ffffff; /* Nuevo color del texto al pasar el cursor */
+}
+
+/* Estilo para el botón Guardar */
+.btn-primary {
+    background-color: #166D74; /* Color verde */
+    border-color: #0bd3b8; /* Color del borde verde */
+}
+
+/* Estilo para el botón Guardar cuando el cursor está sobre él */
+.btn-primary:hover {
+    background-color: #09a13c; /* Nuevo color verde al pasar el cursor */
+    border-color: #16ff01; /* Color del borde verde */
+    color: #ffffff; /* Nuevo color del texto al pasar el cursor */
+}
+
+
+/* Estilo para el ícono SVG en el botón de cerrar */
+.btn-secondary svg {
+    width: 30px; /* Ajusta el ancho del ícono*/
+    height: 30px; /* Ajusta la altura del ícono*/
+    fill: #000000; /* Ajusta el color del ícono*/
+    margin-right: 2px; /* Ajusta el margen derecho del ícono*/
+}
+
+/* Estilo para el texto en el botón de cerrar */
+.btn-secondary .text {
+    font-size: 24px; /* Ajusta el tamaño del texto*/
+}
+
+/* Estilo para el ícono SVG en el botón de cerrar */
+.btn-primary svg {
+    width: 24px; /* Ajusta el ancho del ícono*/
+    height: 24px; /* Ajusta la altura del ícono*/
+    fill: #f8f8f8; /* Ajusta el color del ícono*/
+    margin-right: 6px; /* Ajusta el margen derecho del ícono*/
+}
+
+/* Estilo para el texto en el botón de cerrar */
+.btn-primary .text {
+    font-size: 24px; /* Ajusta el tamaño del texto*/
+}

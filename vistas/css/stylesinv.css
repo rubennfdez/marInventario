@@ -1,0 +1,270 @@
+#contenido {
+    width: auto; /* Establece el ancho del contenedor a 300 píxeles */
+    height: auto; /* Establece la altura del contenedor a 200 píxeles */
+    padding-left: 1%;
+    background-color: rgb(247, 247, 247);
+    margin-left: 6%;
+    margin-top: 1%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+   font-family: 'Poppins';
+   margin:0; padding:0;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 110%;
+   overflow-x: hidden;
+}
+
+
+main{
+   left: 0px;
+   padding: 50px;
+   transition: margin-left 0.5s ease;
+}
+main.min-main{
+   margin-left: 10px;
+}
+footer {
+   background-color: rgb(58, 59, 62);
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 20px;
+   color: white;
+   padding-left: 7%;
+   font-size: 5px;
+   left: 0%;
+}
+
+
+/* .parrafo{
+    background-color: darkcyan; Color de fondo
+    text-align: center; El texto al centro de la pantalla
+    padding: 0px; Grosor del background
+} */
+
+.txt{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -4%;
+}
+
+.container{
+   max-width: 3000px;
+   max-height: 3000px;
+ 
+}
+
+.container .title{
+   font-size: 3.9rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .inventario-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
+   gap:1rem;
+   max-width: 60%; /* Cambiar el ancho máximo según tus preferencias */
+   margin: 0 auto; /* Centra el contenedor horizontalmente */
+   padding: 2rem; /* Agrega relleno según sea necesario */
+}
+
+.container .inventario-container .inventario{
+   text-align: center;
+   padding:2rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(39, 131, 131, 0.1);
+   outline: .2rem solid #93BECB;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .inventario-container .inventario:hover{
+   outline: .2rem solid #383737;
+   outline-offset: 0;
+}
+
+.container .inventario-container .inventario img{
+   height: 12rem;
+}
+
+.container .inventario-container .inventario:hover img{
+   transform: scale(.9);
+}
+
+.container .inventario-container .inventario h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444444;
+}
+
+.container .inventario-container .inventario:hover h3{
+   color:#a53907;
+   font-size: 2.8rem;;
+}
+
+.container .inventario-container .inventario .price{
+   font-size: 2rem;
+   color:#444;
+}
+
+.inventario-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.inventario-preview .preview{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   width: 50rem;
+}
+
+.inventario-preview .preview.active{
+   display: inline-block;
+}
+
+.inventario-preview .preview img{
+   height: 15rem;
+}
+
+.inventario-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+.inventario-preview .preview .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.inventario-preview .preview h3{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 2.5rem;
+}
+
+.inventario-preview .preview .stars{
+   padding:1rem 0;
+   font-size: 1.7rem;
+}
+
+.inventario-preview .preview .stars i{
+   color:#27ae60;
+}
+
+.inventario-preview .preview .stars span{
+   color:#999;
+}
+
+.inventario-preview .preview p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.4rem;
+   color:#4e4e4e;
+   text-transform: none;
+}
+
+.inventario-preview .preview .price{
+   padding:1rem 0;
+   font-size: 2.5rem;
+   color:#27ae60;
+}
+
+.inventario-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.inventario-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#000000;
+   border:.1rem solid #ffffff;
+   border-radius: 1rem;
+}
+
+/*Estilos a los botones de cocina*/
+.inventario-preview .preview .buttons a.cart1{
+   background: #ffffff;
+   color:#000000;
+}
+
+.inventario-preview .preview .buttons a.cart1:hover{
+   background: #E64338;
+   border:.1rem solid #ffffff;
+}
+
+.inventario-preview .preview .buttons a.buy1:hover{
+   background: #F08D40;
+   color:#000000;
+   border:.1rem solid #ffffff;
+}
+
+/*Estilos a los botones de bodega*/
+.inventario-preview .preview .buttons a.cart2{
+    background: #ffffff;
+    color:#000000;
+ }
+ 
+ .inventario-preview .preview .buttons a.cart2:hover{
+    background: #6B48AD;
+    border:.1rem solid #ffffff;
+    color:#ffffff;
+ }
+ 
+ .inventario-preview .preview .buttons a.buy2:hover{
+    background: #B543B0;
+    color:#ffffff;
+    border:.1rem solid #ffffff;
+ }
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   .inventario-preview .preview img{
+      height: 25rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+}

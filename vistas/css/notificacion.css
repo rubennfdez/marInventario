@@ -1,0 +1,50 @@
+/* notificacion.css */
+
+.custom-popup-class {
+    background-color: #0A7B40; /* Cambia el color de fondo */
+    width: 450px; /* Ajusta el ancho */
+    border: 2px solid white; /* Añade un borde blanco de 2px */
+    border-radius: 15px; /* Ajusta la esquina del borde */
+}
+
+.custom-content {
+    display: flex;
+    align-items: center;
+}
+
+.custom-title-class {
+    font-size: 26px; /* Cambia el tamaño de la fuente del título */
+    margin-left: 10px; /* Añade un margen a la izquierda del título para separarlo del icono */
+    font-weight: bold; /* Aplica negrita al título */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.custom-content-class {
+    font-size: 22px; /* Cambia el tamaño de la fuente del contenido */
+    margin-left: 10px; /* Añade un margen a la izquierda del título para separarlo de HECHO*/
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.custom-content-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ocupa el ancho completo */
+}
+
+.custom-checkmark {
+    /* Estilos específicos para tu icono personalizado */
+    width: 36px; /* Ajusta el ancho del icono */
+    height: 36px; /* Ajusta la altura del icono */
+}
+
+.custom-close-button-class {
+    color: #ff0000; /* Cambia el color del botón de cierre */
+}
+
+/* Ajusta la posición del mensaje */
+.swal2-popup {
+    top: 40%; /* Posición vertical en el centro */
+    right: 10px; /* Ajusta la posición desde el lado derecho */
+}
+
+

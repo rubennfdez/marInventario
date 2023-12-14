@@ -1,27 +1,16 @@
-*, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.img-iconos {
+    background-image: url("vistas/iconos/bodega.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 250px; 
+    text-align: center;
+    padding-top: 45px;
+  }
 
-body {
-    font-family: 'FontAwesome', sans-serif;
-    background-color: #bccdde;
-}
-
-.container-buttons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-}
-
-.container-buttons a {
-    width: 70px;
-    height: 70px;
-    display: block;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #000;
-}
+  .btn {
+    background-color: aqua;
+    border: 0px;
+    padding: 15px;
+    
+  }

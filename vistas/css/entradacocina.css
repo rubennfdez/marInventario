@@ -1,0 +1,78 @@
+
+/*Estilo para el texto*/
+.txt-entradac{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Hacer más grandes los iconos de los botones Generar Reporte y Agregar entrada */
+a.btn img {
+    width: 33px;
+    height: 33px;
+}
+/* Ajuste del tamaño del texto de ambos botones */
+a.btn-generar-reporte,
+a.btn-agregar-entrada {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+/* Estilo para el botón Generar reporte */
+a.btn.btn-success.btn-generar-reporte {
+    background-color: #099494;
+    border-color: #099494;
+    transition: background-color 0.3s; /* Transición suave del cambio de color de fondo */
+}
+
+/* Efecto hover para el botón Generar reporte */
+a.btn.btn-generar-reporte:hover {
+    background-color: #000000; /* Color de fondo al pasar el cursor por encima */
+    border-color: #099494;
+}
+
+/* Estilo para el botón Agregar entrada */
+a.btn.btn-success.btn-agregar-entrada {
+    background-color: #0A7B40;
+    border-color: #0A7B40;
+    transition: background-color 0.3s; /* Transición suave del cambio de color de fondo */
+}
+
+/* Efecto hover para el botón Agregar entrada */
+a.btn.btn-agregar-entrada:hover {
+    background-color: #000000; /* Color de fondo al pasar el cursor por encima */
+    border-color: #09ee4d;
+}
+
+/*Estilo del margen izquierdo de la tabla*/
+#tableentradac{
+    margin-left: 280px; /* Ajusta este valor según el ancho de tu menú lateral */
+    max-width:1710px; /* Ajusta el tamaño de la tabla de manera vertical*/
+    font-size: 24px;
+}
+
+/* Espaciado de las celdas */
+#tableentradac th, #tableentradac td {
+    padding: 10px; /* Espacio entre celdas */
+}
+
+/* Ajuste del tamaño de los botones de la columna Acción */
+#tableentradac .btn-action {
+    font-size: 20px; /* Tamaño de fuente de los botones */
+    padding: 5px 10px; /* Ajusta el espaciado según tus preferencias */
+}
+
+/* Ajuste del ancho de la columna Acción */
+#tableentradac .col-action {
+    width: 260px; /* Ancho de la columna */
+}
+
+.table-responsive {
+    max-height: 500px; /* Ajusta la altura máxima según sea necesario */
+    overflow-y: auto;  /* Activa el scroll vertical cuando sea necesario */
+}
+
+
+/*=================================*/
