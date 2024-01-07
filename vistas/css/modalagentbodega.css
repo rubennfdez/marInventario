@@ -14,6 +14,29 @@ hr.my-custom-separator {
 body .modal-header h1.modal-title {
     text-align: center;
     font-weight: bold;
+    margin-left: 40px;
+}
+
+body .modal-header h2.modal-title {
+    text-align: center;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+/* Estilo para el texto en el encabezado del modal */
+.modal-header h1.modal-title {
+    color: #ffffff;
+    margin: 0;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+/* Estilo para el texto en el encabezado del modal */
+.modal-header h2.modal-title {
+    color: #ffffff;
+    margin: 0;
+    font-size: 18px;
+    margin-left: 40px;
 }
 
 /* Estilo para el fondo del encabezado del modal */
@@ -48,17 +71,15 @@ body .modal-header h1.modal-title {
 }
 
 
-/* Estilo para el texto en el encabezado del modal */
-.modal-header h1.modal-title {
-    color: #ffffff;
-    margin: 0;
-    font-size: 30px;
-}
-
 /* Estilo para los labeles en los modales */
 .form-label{
     font-weight: bold;
     font-size: 24px;
+}
+
+.form-label-ds{
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .form-control{
@@ -113,7 +134,40 @@ body .modal-header h1.modal-title {
     color: #ffffff; /* Color del texto */
     padding: 5px; /* Ajusta el espacio interno según tus preferencias */
     margin: 0; /* Elimina el margen superior e inferior del título */
+    border-radius: 3px; /* Añade bordes circulares */
 }
+
+/* Estilo para el fondo vertical del título entradas y salidas en el modal de EDITAR */
+.modal-body h5.text-center-bold-e,
+.modal-body h5.text-center-bold-s {
+    text-align: center; /* Centra el texto */
+    border-radius: 7px; /* Añade bordes circulares */
+    font-size: 24px;
+}
+
+/* Estilo para el contenido del contenedor con bordes circulares */
+.border-rounded {
+    border: 1px solid #ced4da; /* Ajusta el color del borde según tus preferencias */
+    border-radius: 10px; /* Añade bordes circulares */
+    padding: 10px; /* Ajusta el espacio interno según tus preferencias */
+}
+
+/* Estilo para el fondo vertical del título entradas y salidas en el modal de EDITAR*/
+.modal-body h5.text-center-bold-e {
+    background: linear-gradient(to right, #1cd19b, #187575); 
+    color: #ffffff; /* Color del texto */
+    padding: 5px; /* Ajusta el espacio interno según tus preferencias */
+    margin: 0; /* Elimina el margen superior e inferior del título */
+}
+
+/* Estilo para el fondo vertical del título entradas y salidas en el modal de EDITAR*/
+.modal-body h5.text-center-bold-s {
+    background: linear-gradient(to right, #187575, #1cd19b); 
+    color: #ffffff; /* Color del texto */
+    padding: 5px; /* Ajusta el espacio interno según tus preferencias */
+    margin: 0; /* Elimina el margen superior e inferior del título */
+}
+
 .mensaje-error {
     color: red;
     font-size: 12px;

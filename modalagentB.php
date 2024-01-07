@@ -1,5 +1,5 @@
 <!-- Modal Agregar Entrada -->
-<div class="modal fade" id="MEBodegaN" tabindex="-1" aria-labelledby="MEBodegaLabelN" aria-hidden="true">
+<div class="modal fade" id="MEBodegaIG" tabindex="-1" aria-labelledby="MEBodegaLabelIG" aria-hidden="true">
 
     <!--Hacer más grande el modal-->
     <div class="modal-dialog modal-lg">
@@ -8,7 +8,7 @@
 
                 <!-- Icono para agregar nueva entrada -->
                 <img src="vistas/iconos/png/plus.png" alt="Icono de nueva entrada" class="icon">
-                <h1 class="modal-title fs-1" id="MEBodegaLabelN">AGREGAR NUEVA ENTRADA</h1>
+                <h1 class="modal-title fs-1" id="MEBodegaLabelIG">ENTRADA DE PRODUCTO</h1>
 
                 <!--Cerrar modal-->
                 <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -18,7 +18,7 @@
             <div class="modal-body">
 
                 <!--Modificación del formulario-->
-                <form action="guarda.php" method="post" enctype="multipart/form-data">
+                <form action="guardaBIG.php" method="post" enctype="multipart/form-data">
 
                     <!--Categoria-->
                     <div class="mb-3">

@@ -14,11 +14,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <img src="vistas/images/marlogo2.png" alt="Logotipo" width="100" height="50">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
-                    <!--INVENTARIO-->
+
+                    <!--INVENTARIO GENERAL-->
                     <li class="nav-item">
-                        <a class="nav-link" href="indexinventario.php">INVENTARIO</a>
+                        <a class="nav-link" href="inventariogeneral.php">INVENTARIO GENERAL</a>
                     </li>
+
                     <!--Productos-->
                     <li class="nav-item">
                         <a class="nav-link" href="productos.php">PRODUCTOS</a>
@@ -47,7 +48,7 @@
 
                 </form>
                 <li class="nav-item">
-                <button onclick="cerrarSesion()" type="button" class="btn btn-light">CERRAR SESIÓN  <ion-icon name="exit-outline"></ion-icon></button>
+                    <button onclick="cerrarSesion()" type="button" class="btn btn-light">CERRAR SESIÓN <ion-icon name="exit-outline"></ion-icon></button>
                     <script>
                         function cerrarSesion() {
                             window.location.href = "login.php";
@@ -57,6 +58,6 @@
             </div>
         </div>
     </nav>
-   
+
 
 </head>

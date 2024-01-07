@@ -90,7 +90,7 @@ ob_start();
         </div>
     </div>
 
-    <img src="vistas/images/marpat.jpg" />
+    <!--<img src="vistas/images/marpat.jpg" />-->
     <main>
         
     <footer class="footer">

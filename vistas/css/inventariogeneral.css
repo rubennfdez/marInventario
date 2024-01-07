@@ -1,0 +1,149 @@
+
+/*Estilo para el texto*/
+.txt-BIG, .txt-CIG, .txt-IG{
+    font-size: 50px; /* Tamaño de la letra */
+    font-weight: bold; /* Letra en negritas */
+    text-align: center; /* Colocar las letras al centro */
+    margin-left: 200px; /* Mover el texto a la derecha 200 pixeles */
+    letter-spacing: 10px; /* Espaciado entre las letras */
+    border-radius: 5px; /* Borde redondo */
+    padding: 20px; /* Relleno en altura del color de fondo */
+}
+
+.txt-BIG {
+    background-color: rgb(86, 224, 155);
+    margin-top: 20px;
+}
+
+.txt-CIG {
+    background-color: rgb(50, 204, 196);
+    margin-top: 80px;
+}
+
+.txt-IG {
+    background: linear-gradient(to right, rgb(86, 224, 155), rgb(50, 204, 196)); 
+    margin-top: 80px; 
+}
+
+/* Hacer más grandes los iconos de los botones Generar Reporte y Agregar entrada */
+a.btn img {
+    width: 33px;
+    height: 33px;
+}
+/* Ajuste del tamaño del texto de ambos botones */
+a.btn-generar-reporte-bodega,
+a.btn-generar-reporte-cocina,
+a.btn-generar-reporte-IG {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    width: 195px;
+}
+
+a.btn-agregar-entrada {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    width: 245px;
+}
+
+/* Estilo para el botón Generar reporte en BODEGA*/
+a.btn.btn-success.btn-generar-reporte-bodega {
+    background-color: rgb(86, 224, 155);
+    border-color: rgb(86, 224, 155);
+    transition: background-color 0.5s; /* Transición suave del cambio de color de fondo */
+}
+
+/* Estilo para el botón Generar reporte en COCINA */
+a.btn.btn-success.btn-generar-reporte-cocina {
+    background-color: #099494;
+    border-color: #099494;
+    transition: background-color 0.5s; /* Transición suave del cambio de color de fondo */
+}
+
+/* Estilo para el botón Generar reporte en INVENTARIO GENERAL*/
+a.btn.btn-success.btn-generar-reporte-IG {
+    background: linear-gradient(to right, rgb(62, 161, 112), rgb(36, 165, 159)); 
+    border-color: rgb(86, 224, 155); 
+    transition: background-color 1s; /* Transición suave del cambio de color de fondo */
+}
+
+/* Efecto hover para el botón Generar reporte BODEGA*/
+a.btn.btn-generar-reporte-bodega:hover {
+    background-color: #000000; /* Color de fondo al pasar el cursor por encima */
+    border-color: rgb(86, 224, 155);
+}
+
+/* Efecto hover para el botón Generar reporte COCINA*/
+a.btn.btn-generar-reporte-cocina:hover {
+    background-color: #000000; /* Color de fondo al pasar el cursor por encima */
+    border-color: #099494;
+}
+
+/* Efecto hover para el botón Generar reporte INVENTARIO GENERAL*/
+a.btn.btn-generar-reporte-IG:hover {
+    background: linear-gradient(to right, rgb(8, 8, 8), rgb(16, 170, 162)); /* Color al pasar el cursor */
+    border-color: linear-gradient(to right, rgb(16, 170, 162), rgb(8, 8, 8));
+}
+
+/* Estilo para el botón Agregar entrada */
+a.btn.btn-success.btn-agregar-entrada {
+    background-color: #0A7B40;
+    border-color: #0A7B40;
+    transition: background-color 0.3s; /* Transición suave del cambio de color de fondo */
+}
+
+/* Efecto hover para el botón Agregar entrada */
+a.btn.btn-agregar-entrada:hover {
+    background-color: #000000; /* Color de fondo al pasar el cursor por encima */
+    border-color: #09ee4d;
+}
+
+/*Estilo del margen izquierdo de la tabla*/
+#tablebig, #tablecig, #tableig{
+    margin-left: 280px; /* Ajusta este valor según el ancho de tu menú lateral */
+    max-width:1710px; /* Ajusta el tamaño de la tabla de manera vertical*/
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Espaciado de las celdas */
+#tablebig th, #tablebig td, #tablecig th, #tablecig td, #tableig th, #tableig td {
+    padding: 10px; /* Espacio entre celdas */
+}
+
+/* Ajuste del tamaño de los botones de la columna Acción */
+#tablebig .btn-action, #tablecig .btn-action, #tableig .btn-action {
+    font-size: 20px; /* Tamaño de fuente de los botones */
+    padding: 5px 10px; /* Ajusta el espaciado según tus preferencias */
+}
+#tablebig a.btn svg, #tablecig a.btn svg, #tableig a.btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Ajuste del ancho de la columna Acción */
+#tablebig .col-action, #tablecig .col-action, #tableig .col-action {
+    width: 150px; /* Ancho de la columna */
+}
+
+.producto-column, .fecha-column, .categoria-column {
+    text-align: left;
+    font-size: 20px;
+}
+
+#tablebig .e-c {
+    background-color: rgb(86, 224, 155);
+}
+
+#tablecig .e-c {
+    background-color: rgb(50, 204, 196);
+}
+
+.table-responsive {
+    max-height: 500px; /* Ajusta la altura máxima según sea necesario */
+    overflow-y: auto;  /* Activa el scroll vertical cuando sea necesario */
+}
+
+
+/*=================================*/

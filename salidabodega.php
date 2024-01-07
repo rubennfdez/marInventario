@@ -5,7 +5,7 @@ require 'configbd2.php';
 /* Incluir el elimina.php para el botón de eliminar registro */
 include "eliminasalida.php";
 
-/* Mostrar los datos de la BD a la tabla de entrada - bodega*/
+/* Mostrar los datos de la BD a la tabla de salida - bodega*/
 $sqlSalida_Bodega = "SELECT es.idbodega_salida, 
                              ct.nombre_cat AS categoria,   -- Alias de la columna nombre_cat en la tabla categorias
                              prod.nombre_prod AS producto, -- Alias de la columna nombre_prod en la tabla productos
@@ -193,8 +193,9 @@ include_once("slidebar.php");
   $medidat->data_seek(0);
   ?>
 
-  <!-- Agregamos modal de editar registro entrada en bodega -->
+  <!-- Agregamos modal de editar registro salida en bodega -->
   <?php include 'modaleditsalbodega.php'; ?>
+  <?php include 'modaleditentbodega.php'; ?>
 
   <!-- Eventos de los modales EDITAR -->
   <script>
