@@ -88,6 +88,15 @@ if (!$inventario_cocina_result) {
 
   <!-- Alerta de eliminación de registro de salida -->
   <script src="vistas/js/sweet.js"></script>
+
+  <!-- Eliminación de todos los registros de la tabla BODEGA -->
+  <script src="vistas/js/eliminaBodega.js"></script>
+
+  <!-- Eliminación de todos los registros de la tabla COCINA -->
+  <script src="vistas/js/eliminaCocina.js"></script>
+
+  <!-- Agrega jQuery 3.6.4 PARA ELIMINAR REGISTRO DE LAS TABLAS DE BODEGA Y COCINA -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <!-- Menús -->
@@ -105,9 +114,13 @@ include_once("header.php");
     <hr>
   </div>
 
-  <!--Botón de agregar entrada y generar reporte-->
+  <!--Botón de eliminar registros bodega , agregar entrada y generar reporte-->
   <div class="row justify-content-end">
     <div class="col-auto">
+      <a href="" class="btn btn-danger btn-eliminar-todo-bodega" onclick="eliminarTodosBodega(event)">
+        <img src="vistas/iconos/svg/delete-trash.svg" alt="Eliminar registros bodega" class="me-2">
+        Eliminar registros
+      </a>
       <a href="vistas/fpdf/rBIG.php" target="_blank" class="btn btn-success btn-generar-reporte-bodega">
         <img src="vistas/iconos/svg/pdf.svg" alt="Generar reporte en Bodega" class="me-2">
         PDF Bodega
@@ -153,7 +166,7 @@ include_once("header.php");
                 <th scope="col" class="pl-1 border border-secondary">Categoría</th>
                 <th scope="col" class="pl-1 border border-secondary">Producto</th>
                 <th scope="col" class="pl-1 border border-secondary">UM</th>
-                <th scope="col" class="pl-1 border border-secondary">Entrada</th>
+                <th scope="col" class="pl-1 border border-secondary">ENTR</th>
                 <!-- Lunes -->
                 <th scope="col" class="pl-1 border border-secondary">E</th>
                 <th scope="col" class="pl-1 border border-secondary">S</th>
@@ -350,11 +363,15 @@ include_once("header.php");
   <!--Botón de agregar entrada y generar reporte-->
   <div class="row justify-content-end">
     <div class="col-auto">
+      <a href="" class="btn btn-danger btn-eliminar-todo-cocina" onclick="eliminarTodosCocina(event)">
+        <img src="vistas/iconos/svg/delete-trash.svg" alt="Eliminar registros cocina" class="me-2">
+        Eliminar registros
+      </a>
       <a href="vistas/fpdf/rCIG.php" target="_blank" class="btn btn-success btn-generar-reporte-cocina">
         <img src="vistas/iconos/svg/pdf.svg" alt="Generar reporte en cocina" class="me-2">
         PDF Cocina
       </a>
-      <a href="" class="btn btn-success btn-agregar-entrada me-2 " data-bs-toggle="modal" data-bs-target="#MECocinaIG">
+      <a href="" class="btn btn-success btn-agregar-entrada-cocina me-2 " data-bs-toggle="modal" data-bs-target="#MECocinaIG">
         <img src="vistas/iconos/svg/plus.svg" alt="Agregar entrada" class="me-2" />
         Agregar entrada
       </a>
@@ -395,7 +412,7 @@ include_once("header.php");
                 <th scope="col" class="pl-1 border border-secondary">Categoría</th>
                 <th scope="col" class="pl-1 border border-secondary">Producto</th>
                 <th scope="col" class="pl-1 border border-secondary">UM</th>
-                <th scope="col" class="pl-1 border border-secondary">Inicial</th>
+                <th scope="col" class="pl-1 border border-secondary">INIC</th>
                 <!-- Lunes -->
                 <th scope="col" class="pl-1 border border-secondary">E</th>
                 <th scope="col" class="pl-1 border border-secondary">S</th>

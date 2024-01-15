@@ -33,6 +33,8 @@ a.btn img {
 /* Ajuste del tamaño del texto de ambos botones */
 a.btn-generar-reporte-bodega,
 a.btn-generar-reporte-cocina,
+a.btn-eliminar-todo-bodega,
+a.btn-eliminar-todo-cocina,
 a.btn-generar-reporte-IG {
     font-size: 20px;
     margin-top: 5px;
@@ -40,17 +42,34 @@ a.btn-generar-reporte-IG {
     width: 195px;
 }
 
-a.btn-agregar-entrada {
+a.btn-agregar-entrada,
+a.btn-agregar-entrada-cocina {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 3px;
     width: 245px;
 }
 
+a.btn-eliminar-todo-bodega,
+a.btn-eliminar-todo-cocina {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    width: 250px;
+}
+
+/* Estilo para el botón Generar reporte en BODEGA y COCINA*/
+a.btn.btn-danger.btn-eliminar-todo-bodega,
+a.btn.btn-danger.btn-eliminar-todo-cocina {
+    background-color: rgb(216, 52, 3);
+    border-color: rgb(216, 52, 3);
+    transition: background-color 0.5s; /* Transición suave del cambio de color de fondo */
+}
+
 /* Estilo para el botón Generar reporte en BODEGA*/
 a.btn.btn-success.btn-generar-reporte-bodega {
-    background-color: rgb(86, 224, 155);
-    border-color: rgb(86, 224, 155);
+    background-color: rgb(57, 158, 107);
+    border-color: rgb(57, 158, 107);
     transition: background-color 0.5s; /* Transición suave del cambio de color de fondo */
 }
 
@@ -66,6 +85,18 @@ a.btn.btn-success.btn-generar-reporte-IG {
     background: linear-gradient(to right, rgb(62, 161, 112), rgb(36, 165, 159)); 
     border-color: rgb(86, 224, 155); 
     transition: background-color 1s; /* Transición suave del cambio de color de fondo */
+}
+
+/* Efecto hover para el botón Eliminar Registros BODEGA*/
+a.btn.btn-eliminar-todo-bodega:hover {
+    background-color: rgb(0, 0, 0); /* Color de fondo al pasar el cursor por encima */
+    border-color: rgb(86, 224, 155);
+}
+
+/* Efecto hover para el botón Eliminar Registros COCINA*/
+a.btn.btn-eliminar-todo-cocina:hover {
+    background-color: rgb(0, 0, 0); /* Color de fondo al pasar el cursor por encima */
+    border-color: #099494;
 }
 
 /* Efecto hover para el botón Generar reporte BODEGA*/
@@ -86,10 +117,17 @@ a.btn.btn-generar-reporte-IG:hover {
     border-color: linear-gradient(to right, rgb(16, 170, 162), rgb(8, 8, 8));
 }
 
-/* Estilo para el botón Agregar entrada */
+/* Estilo para el botón Agregar entrada BODEGA */
 a.btn.btn-success.btn-agregar-entrada {
     background-color: #0A7B40;
     border-color: #0A7B40;
+    transition: background-color 0.3s; /* Transición suave del cambio de color de fondo */
+}
+
+/* Estilo para el botón Agregar entrada COCINA */
+a.btn.btn-success.btn-agregar-entrada-cocina {
+    background-color: #065964;
+    border-color: #065964;
     transition: background-color 0.3s; /* Transición suave del cambio de color de fondo */
 }
 
@@ -97,6 +135,12 @@ a.btn.btn-success.btn-agregar-entrada {
 a.btn.btn-agregar-entrada:hover {
     background-color: #000000; /* Color de fondo al pasar el cursor por encima */
     border-color: #09ee4d;
+}
+
+/* Efecto hover para el botón Agregar entrada COCINA*/
+a.btn.btn-agregar-entrada-cocina:hover {
+    background-color: #000000; /* Color de fondo al pasar el cursor por encima */
+    border-color: #099494;
 }
 
 /*Estilo del margen izquierdo de la tabla*/
@@ -141,7 +185,7 @@ a.btn.btn-agregar-entrada:hover {
 }
 
 .table-responsive {
-    max-height: 500px; /* Ajusta la altura máxima según sea necesario */
+    max-height: 700px; /* Ajusta la altura máxima según sea necesario */
     overflow-y: auto;  /* Activa el scroll vertical cuando sea necesario */
 }
 

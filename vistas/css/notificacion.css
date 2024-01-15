@@ -7,10 +7,18 @@
     border-radius: 15px; /* Ajusta la esquina del borde */
 }
 
+.custom-popup-class-general {
+    background-color: #0A7B40; /* Cambia el color de fondo */
+    width: 500px; /* Ajusta el ancho */
+    border: 2px solid white; /* Añade un borde blanco de 2px */
+    border-radius: 15px; /* Ajusta la esquina del borde */
+}
+
 .custom-content {
     display: flex;
     align-items: center;
 }
+
 
 .custom-title-class {
     font-size: 26px; /* Cambia el tamaño de la fuente del título */
