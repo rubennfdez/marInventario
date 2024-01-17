@@ -69,16 +69,16 @@ if (!$inventario_cocina_result) {
   <link rel="stylesheet" href="vistas/css/notificacion.css">
 
   <!-- jQuery -->
-  <!--<script src="https://code.jquery.com/jquery-3.7.0.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 
   <!-- DataTables -->
-  <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
   <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>-->
+  <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
 
   <!-- Bootstrap -->
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">-->
-  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Bootstrap 5 (CARGA DE MODALES) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
@@ -96,7 +96,7 @@ if (!$inventario_cocina_result) {
   <script src="vistas/js/eliminaCocina.js"></script>
 
   <!-- Agrega jQuery 3.6.4 PARA ELIMINAR REGISTRO DE LAS TABLAS DE BODEGA Y COCINA -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>-->
 </head>
 
 <!-- Menús -->
@@ -238,7 +238,7 @@ include_once("header.php");
 
                     <!-- Botón para Eliminar Registro -->
                     <a href="inventariogeneral.php?id=<?= $row_inventariobodega['idbodega_inventario']; ?>" onclick="advertencia(event)" class="btn btn-sm btn-danger btn-action">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                      <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                         <path fill="#ffffff" d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
                       </svg>
                     </a>
@@ -348,6 +348,34 @@ include_once("header.php");
           inputS_Domingo.value = data.s_domingo
 
         }).catch(err => console.log(err))
+    });
+  </script>
+
+  <!-- LIBRERIA DE DATATABLE PARA PAGINACIÓN BODEGA -->
+  <script>
+    $(document).ready(function() {
+      $('#tablebig').DataTable({
+        language: {
+          lengthMenu: 'Mostrar ' +
+            '<select class="custom-select custom-select-sm form-control form-control-sm">' +
+            '<option value="5">5</option>' +
+            '<option value="10">10</option>' +
+            '<option value="25">25</option>' +
+            '<option value="50">50</option>' +
+            '<option value="100">100</option>' +
+            '<option value="-1">Todo</option>' +
+            '</select> registros por página',
+          zeroRecords: 'No hay registros con esas características',
+          info: 'Mostrando la página _PAGE_ de _PAGES_',
+          infoEmpty: 'No hay registros disponibles',
+          infoFiltered: '(filtrado de _MAX_ registros totales)',
+          search: 'Buscar:',
+          paginate: {
+            next: 'Siguiente',
+            previous: 'Anterior'
+          }
+        },
+      });
     });
   </script>
 
@@ -597,6 +625,34 @@ include_once("header.php");
     });
   </script>
 
+  <!-- LIBRERIA DE DATATABLE PARA PAGINACIÓN COCINA -->
+  <script>
+    $(document).ready(function() {
+      $('#tablecig').DataTable({
+        language: {
+          lengthMenu: 'Mostrar ' +
+            '<select class="custom-select custom-select-sm form-control form-control-sm">' +
+            '<option value="5">5</option>' +
+            '<option value="10">10</option>' +
+            '<option value="25">25</option>' +
+            '<option value="50">50</option>' +
+            '<option value="100">100</option>' +
+            '<option value="-1">Todo</option>' +
+            '</select> registros por página',
+          zeroRecords: 'No hay registros con esas características',
+          info: 'Mostrando la página _PAGE_ de _PAGES_',
+          infoEmpty: 'No hay registros disponibles',
+          infoFiltered: '(filtrado de _MAX_ registros totales)',
+          search: 'Buscar:',
+          paginate: {
+            next: 'Siguiente',
+            previous: 'Anterior'
+          }
+        },
+      });
+    });
+  </script>
+
   <!-- ======= INICIO DE INVENTARIO GENERAL DE AMBAS TABLAS ======== -->
 
   <!--Texto sencillo-->
@@ -681,33 +737,5 @@ include_once("header.php");
 
 
 </body>
-
-<!-- LIBRERIA DE DATATABLE PARA PAGINACIÓN -->
-<script>
-  $(document).ready(function() {
-    $('#tableentrada').DataTable({
-      language: {
-        lengthMenu: 'Mostrar ' +
-          '<select class="custom-select custom-select-sm form-control form-control-sm">' +
-          '<option value="5">5</option>' +
-          '<option value="10">10</option>' +
-          '<option value="25">25</option>' +
-          '<option value="50">50</option>' +
-          '<option value="100">100</option>' +
-          '<option value="-1">Todo</option>' +
-          '</select> registros por página',
-        zeroRecords: 'No hay registros con esas características',
-        info: 'Mostrando la página _PAGE_ de _PAGES_',
-        infoEmpty: 'No hay registros disponibles',
-        infoFiltered: '(filtrado de _MAX_ registros totales)',
-        search: 'Buscar:',
-        paginate: {
-          next: 'Siguiente',
-          previous: 'Anterior'
-        }
-      },
-    });
-  });
-</script>
 
 </html>

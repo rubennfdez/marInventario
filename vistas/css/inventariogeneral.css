@@ -162,8 +162,8 @@ a.btn.btn-agregar-entrada-cocina:hover {
     padding: 5px 10px; /* Ajusta el espaciado según tus preferencias */
 }
 #tablebig a.btn svg, #tablecig a.btn svg, #tableig a.btn svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 /* Ajuste del ancho de la columna Acción */
